@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//SOLID
+
+//Single Responsability
+//Open-Closed Principle
+//Liskov Substitution
+//Interface Segregation
+//Dependency Inversion
+
+namespace Data.Contracts
+{
+    public interface IGenericRepository<T> where T : class
+    {
+        int Add(T entity);
+        T Get(int id);
+        bool Update(T entity);
+        bool Delete(int id);
+    }
+}
