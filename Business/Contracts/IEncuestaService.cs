@@ -18,5 +18,8 @@ namespace Business.Contracts
         //Delete
         bool Delete(int id);
         List<Encuesta> GetSurveys(int idEncuesta);
+        List<Usuario> GetUsersFromSurvey(int surveyId);
+        bool RelateSurveyWithUser(int surveyId, int userId);
+
     }
 }

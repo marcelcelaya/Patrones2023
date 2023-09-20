@@ -300,3 +300,6 @@ C:\Users\marce\source\repos\Survey\WebApplication2\obj\Debug\net6.0\API.RazorAss
 C:\Users\marce\source\repos\Survey\WebApplication2\obj\Debug\net6.0\API.RazorAssemblyInfo.cs
 C:\Users\marce\source\repos\Survey\WebApplication2\bin\Debug\net6.0\Business.dll
 C:\Users\marce\source\repos\Survey\WebApplication2\bin\Debug\net6.0\Business.pdb
+C:\Users\marce\source\repos\Survey\WebApplication2\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\marce\source\repos\Survey\WebApplication2\bin\Debug\net6.0\System.Web.Http.dll
+C:\Users\marce\source\repos\Survey\WebApplication2\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

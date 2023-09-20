@@ -26,12 +26,14 @@ namespace Business.Implementation
 
         public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0) return false;
+            return _encuestaRepo.Delete(id);
         }
 
         public Encuesta Get(int id)
         {
-            throw new NotImplementedException();
+            if (id <= 0) return null;
+            return _encuestaRepo.Get(id);
         }
 
         public List<Encuesta> GetSurveys(int idEncuesta)
@@ -39,9 +41,24 @@ namespace Business.Implementation
             throw new NotImplementedException();
         }
 
+        public List<Usuario> GetUsersFromSurvey(int surveyId)
+        {
+            if (surveyId <= 0) return null;
+            return _encuestaRepo.GetUsersFromSurvey(surveyId);
+        }
+
+        public bool RelateSurveyWithUser(int surveyId, int userId)
+        {
+            if (surveyId <= 0) return false;
+            if (userId <= 0) return false;
+            return _encuestaRepo.RelateSurveyWithUser(surveyId, userId);
+        }
+
         public bool Update(Encuesta enc)
         {
-            throw new NotImplementedException();
+            if (enc == null) return false;
+            if (enc.Id <= 0) return false;
+            return _encuestaRepo.Update(enc);
         }
     }
 }

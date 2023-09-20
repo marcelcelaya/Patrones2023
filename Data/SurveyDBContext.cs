@@ -18,9 +18,7 @@ namespace Data
         public SurveyDBContext(DbContextOptions<SurveyDBContext> options) : base(options) { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
             optionsBuilder.UseSqlServer("Server=MARCELCELAYA\\SQLEXPRESS;Database=EncuestaDb;Integrated Security=SSPI;TrustServerCertificate=true;");
-
         }
     }
 }
