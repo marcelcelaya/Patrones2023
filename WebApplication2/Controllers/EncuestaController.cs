@@ -65,7 +65,7 @@ namespace API.Controllers
         {
             if (idSurvey <= 0) return BadRequest();
             if (idUser <= 0) return BadRequest();
-            return Ok(_encuestaService.RelateSurveyWithUser(idSurvey, idUser));
+                return Ok(_encuestaService.RelateSurveyWithUser(idSurvey, idUser));
         }
     }
 }
